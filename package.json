@@ -1,0 +1,34 @@
+{
+  "name": "@stdlib/math-iter-sequences-negafibonacci",
+  "version": "0.0.0",
+  "description": "Create an iterator which generates a negaFibonacci sequence.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./mod.js",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/math-iter-sequences-negafibonacci.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "stdmath",
+    "mathematics",
+    "math",
+    "fibonacci",
+    "fibo",
+    "fib",
+    "sequence",
+    "iterator",
+    "iterate",
+    "iteration",
+    "iter"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}
