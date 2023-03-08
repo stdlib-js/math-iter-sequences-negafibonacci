@@ -32,10 +32,14 @@ The [negaFibonacci numbers][fibonacci-number] are the integer sequence
 
 <!-- <equation class="equation" label="eq:negafibonacci_sequence" align="center" raw="0, 1, -1, 2, -3, 5, -8, 13, -21, 34, -55, 89, -144, \ldots" alt="NegaFibonacci sequence"> -->
 
-<div class="equation" align="center" data-raw-text="0, 1, -1, 2, -3, 5, -8, 13, -21, 34, -55, 89, -144, \ldots" data-equation="eq:negafibonacci_sequence">
+```math
+0, 1, -1, 2, -3, 5, -8, 13, -21, 34, -55, 89, -144, \ldots
+```
+
+<!-- <div class="equation" align="center" data-raw-text="0, 1, -1, 2, -3, 5, -8, 13, -21, 34, -55, 89, -144, \ldots" data-equation="eq:negafibonacci_sequence">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@aa77a2f6e76d2e9da5b49bffa45ee5167d6c16e1/lib/node_modules/@stdlib/math/iter/sequences/negafibonacci/docs/img/equation_negafibonacci_sequence.svg" alt="NegaFibonacci sequence">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 
@@ -43,10 +47,14 @@ The sequence is defined by the recurrence relation
 
 <!-- <equation class="equation" label="eq:negafibonacci_recurrence_relation" align="center" raw="F_{n-2} = F_{n} - F_{n-1}" alt="NegaFibonacci sequence recurrence relation"> -->
 
-<div class="equation" align="center" data-raw-text="F_{n-2} = F_{n} - F_{n-1}" data-equation="eq:negafibonacci_recurrence_relation">
+```math
+F_{n-2} = F_{n} - F_{n-1}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="F_{n-2} = F_{n} - F_{n-1}" data-equation="eq:negafibonacci_recurrence_relation">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@aa77a2f6e76d2e9da5b49bffa45ee5167d6c16e1/lib/node_modules/@stdlib/math/iter/sequences/negafibonacci/docs/img/equation_negafibonacci_recurrence_relation.svg" alt="NegaFibonacci sequence recurrence relation">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 
@@ -54,10 +62,14 @@ which yields
 
 <!-- <equation class="equation" label="eq:negafibonacci_fibonacci" align="center" raw="F_{-n} = (-1)^{n+1} F_n" alt="NegaFibonacci relationship to Fibonacci numbers"> -->
 
-<div class="equation" align="center" data-raw-text="F_{-n} = (-1)^{n+1} F_n" data-equation="eq:negafibonacci_fibonacci">
+```math
+F_{-n} = (-1)^{n+1} F_n
+```
+
+<!-- <div class="equation" align="center" data-raw-text="F_{-n} = (-1)^{n+1} F_n" data-equation="eq:negafibonacci_fibonacci">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@aa77a2f6e76d2e9da5b49bffa45ee5167d6c16e1/lib/node_modules/@stdlib/math/iter/sequences/negafibonacci/docs/img/equation_negafibonacci_fibonacci.svg" alt="NegaFibonacci relationship to Fibonacci numbers">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 
@@ -69,38 +81,30 @@ with seed values `F_0 = 0` and `F_{-1} = 1`.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/math-iter-sequences-negafibonacci
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-iterNegaFibonacciSeq = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-sequences-negafibonacci@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var iterNegaFibonacciSeq = require( 'path/to/vendor/umd/math-iter-sequences-negafibonacci/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-sequences-negafibonacci@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.iterNegaFibonacciSeq;
-})();
-</script>
+var iterNegaFibonacciSeq = require( '@stdlib/math-iter-sequences-negafibonacci' );
 ```
 
 #### iterNegaFibonacciSeq( \[options] )
@@ -175,13 +179,8 @@ var bool = it.next().done;
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-sequences-negafibonacci@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var iterNegaFibonacciSeq = require( '@stdlib/math-iter-sequences-negafibonacci' );
 
 // Create an iterator:
 var it = iterNegaFibonacciSeq();
@@ -195,11 +194,6 @@ while ( true ) {
     }
     console.log( v.value );
 }
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -283,7 +277,7 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 -->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
-[chat-url]: https://gitter.im/stdlib-js/stdlib/
+[chat-url]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
 
 [stdlib]: https://github.com/stdlib-js/stdlib
 
@@ -305,11 +299,11 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/math/base/special/negafibonacci]: https://github.com/stdlib-js/math-base-special-negafibonacci/tree/umd
+[@stdlib/math/base/special/negafibonacci]: https://github.com/stdlib-js/math-base-special-negafibonacci
 
-[@stdlib/math/iter/sequences/fibonacci]: https://github.com/stdlib-js/math-iter-sequences-fibonacci/tree/umd
+[@stdlib/math/iter/sequences/fibonacci]: https://github.com/stdlib-js/math-iter-sequences-fibonacci
 
-[@stdlib/math/iter/sequences/nonfibonacci]: https://github.com/stdlib-js/math-iter-sequences-nonfibonacci/tree/umd
+[@stdlib/math/iter/sequences/nonfibonacci]: https://github.com/stdlib-js/math-iter-sequences-nonfibonacci
 
 <!-- </related-links> -->
 
