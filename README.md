@@ -101,6 +101,11 @@ with seed values `F_0 = 0` and `F_{-1} = 1`.
 To use in Observable,
 
 ```javascript
+iterNegaFibonacciSeq = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-sequences-negafibonacci@umd/browser.js' )
+```
+The previous example will load the latest bundled code from the umd branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/math-iter-sequences-negafibonacci/tags). For example,
+
+```javascript
 iterNegaFibonacciSeq = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-sequences-negafibonacci@v0.1.0-umd/browser.js' )
 ```
 
@@ -113,7 +118,7 @@ var iterNegaFibonacciSeq = require( 'path/to/vendor/umd/math-iter-sequences-nega
 To include the bundle in a webpage,
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-sequences-negafibonacci@v0.1.0-umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-sequences-negafibonacci@umd/browser.js"></script>
 ```
 
 If no recognized module system is present, access bundle contents via the global scope:
@@ -202,7 +207,7 @@ var bool = it.next().done;
 <!DOCTYPE html>
 <html lang="en">
 <body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-sequences-negafibonacci@v0.1.0-umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-sequences-negafibonacci@umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
 
