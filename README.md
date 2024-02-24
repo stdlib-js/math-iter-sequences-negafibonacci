@@ -99,6 +99,11 @@ with seed values `F_0 = 0` and `F_{-1} = 1`.
 ## Usage
 
 ```javascript
+import iterNegaFibonacciSeq from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-sequences-negafibonacci@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/math-iter-sequences-negafibonacci/tags). For example,
+
+```javascript
 import iterNegaFibonacciSeq from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-sequences-negafibonacci@v0.2.1-deno/mod.js';
 ```
 
@@ -175,7 +180,7 @@ var bool = it.next().done;
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import iterNegaFibonacciSeq from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-sequences-negafibonacci@v0.2.1-deno/mod.js';
+import iterNegaFibonacciSeq from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-sequences-negafibonacci@deno/mod.js';
 
 // Create an iterator:
 var it = iterNegaFibonacciSeq();
