@@ -99,7 +99,7 @@ with seed values `F_0 = 0` and `F_{-1} = 1`.
 ## Usage
 
 ```javascript
-import iterNegaFibonacciSeq from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-sequences-negafibonacci@esm/index.mjs';
+import iterNegaFibonacciSeq from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-sequences-negafibonacci@v0.2.2-esm/index.mjs';
 ```
 
 #### iterNegaFibonacciSeq( \[options] )
@@ -180,7 +180,7 @@ var bool = it.next().done;
 <body>
 <script type="module">
 
-import iterNegaFibonacciSeq from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-sequences-negafibonacci@esm/index.mjs';
+import iterNegaFibonacciSeq from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-sequences-negafibonacci@v0.2.2-esm/index.mjs';
 
 // Create an iterator:
 var it = iterNegaFibonacciSeq();
